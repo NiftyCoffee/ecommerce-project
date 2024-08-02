@@ -1,0 +1,13 @@
+.filter-display {
+    border: 1px solid;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.filter-cross-icon {
+    width: 1.5rem;
+}

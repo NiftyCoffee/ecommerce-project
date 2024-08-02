@@ -1,0 +1,24 @@
+h1 {
+    font-family: 'LibreBaskerville_Bold';
+    font-size: 1.7rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 2rem;
+    box-shadow: 0 0px 1px 0px;
+}
+
+nav ul {
+    width: 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.account-btn {
+    padding: .5rem 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+}
