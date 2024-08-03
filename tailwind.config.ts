@@ -17,7 +17,13 @@ const config: Config = {
         light: '#fff1e9',
         dark: '#171827',
         light_accent: '#d0ccc7',
-        dark_accent: '#272835',
+        // dark_accent: '#272835',
+        dark_accent: '#2f3040',
+      },
+      fontFamily: {
+        'standard': ['LibreBaskerville', 'serif'],
+        'bold': ['LibreBaskerville_Bold', 'serif'],
+        'italic': ['LibreBaskerville_Italic', 'serif'],
       }
     },
   },

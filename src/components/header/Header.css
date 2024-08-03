@@ -3,18 +3,26 @@ h1 {
     font-size: 1.7rem;
 }
 
+.nav-section {
+    box-shadow: 0 0px 1px 0px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    padding: .7rem 2rem;
-    box-shadow: 0 0px 1px 0px;
+    max-width: 80rem;
+    margin: 0 auto;
 }
 
 nav ul {
     width: 15rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+li.nav {
+    width: fit-content;
 }
 
 .account-btn {

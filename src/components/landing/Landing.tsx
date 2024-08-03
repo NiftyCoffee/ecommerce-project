@@ -1,18 +1,20 @@
 "use client"
 
 import './Landing.css';
-import SearchBar from "./searchbar/SearchBar";
 import { useState } from "react";
 import SideBar from "./sidebar/SideBar";
+import TopBar from './topbar/TopBar';
 
 export default function Landing() {
 
     const [filters, setFilters] = useState<string[]>([]);
 
     return (
-        <main className="landing-container flex justify-even items-start">
+        <section className="landing-container flex justify-between items-start">
             <SideBar filters={filters} setFilters={setFilters} />
-            <SearchBar filters={filters} setFilters={setFilters} />
-        </main>
+            <section className="landing-body">
+                <TopBar filters={filters} setFilters={setFilters} />
+            </section>
+        </section>
     )
 }

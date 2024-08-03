@@ -10,20 +10,20 @@ interface FiltersDisplayProps {
 
 export default function FiltersDisplay(props: FiltersDisplayProps) {
     return (
-        <section>
+        <div>
             <div className={`filters-display-container`}>
                 <h3 className="filters-display-heading border-dark dark:border_light">Filters</h3>
-                <ul className="filters-display-list max-height">
+                <ul className="filters-display-list">
                     {props.filters.length > 0 ? (
                         props.filters.map((filter, index) => (
                             // <li key={index} className="filters-display-item">{filter}</li>
                             <FilterDisplay key={index} name={filter} filters={props.filters} setFilters={props.setFilters} />
                         ))
                     ) : (
-                        <span className="filters-display-placeholder text-gray-500">No filters applied</span>
+                        <span className="filters-display-placeholder text-dark_accent dark:text-light_accent">No filters applied</span>
                     )}
                 </ul>
             </div>
-        </section>
+        </div>
     )
 }

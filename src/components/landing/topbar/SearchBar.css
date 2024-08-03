@@ -1,7 +1,7 @@
 .search-container {
     /* margin: 2rem 20rem; */
-    margin: 0 auto;
-    width: 55rem;
+    margin: 0;
+    width: 40rem;
     padding: .5rem 0;
     border-bottom: 2px solid;
     display: flex;
@@ -28,7 +28,7 @@
 .aesthetics-list {
     margin-top: 1rem;
     border: 1px solid;
-    width: 27.5rem;
+    width: 25rem;
 }
 
 .search-divider {
