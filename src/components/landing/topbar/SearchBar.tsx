@@ -46,7 +46,7 @@ export default function SearchBar(props: SearchBarProps) {
                         onClick={toggleDropdown}
                     />
                 </span>
-                <ul id="aesthetics-list" className="aesthetics-list absolute hidden">
+                <ul id="aesthetics-list" className="aesthetics-list bg-light dark:bg-dark z-10 absolute hidden">
                     <AestheticListItem name="Coquette" filters={props.filters} setFilters={props.setFilters} />
                     <AestheticListItem name="Y2K" filters={props.filters} setFilters={props.setFilters} />
                     <AestheticListItem name="Old Money" filters={props.filters} setFilters={props.setFilters} />

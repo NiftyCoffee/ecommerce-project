@@ -20,7 +20,7 @@ export default function FiltersDisplay(props: FiltersDisplayProps) {
                             <FilterDisplay key={index} name={filter} filters={props.filters} setFilters={props.setFilters} />
                         ))
                     ) : (
-                        <span className="filters-display-placeholder text-dark_accent dark:text-light_accent">No filters applied</span>
+                        <span className="filters-display-placeholder text-light_secondary dark:text-dark_secondary">No filters applied</span>
                     )}
                 </ul>
             </div>

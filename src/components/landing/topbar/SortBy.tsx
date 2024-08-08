@@ -41,7 +41,7 @@ export default function SortBy() {
                 className="sortby-icon hidden dark:block w-8 h-8"
                 />
             </div>
-            <ul className={`sort-option-list border-x border-dark dark:border-light rounded-md ${showDropdown ? '' : 'hidden'}`}>
+            <ul className={`sort-option-list bg-light dark:bg-dark border-x border-dark dark:border-light rounded-md w-60 z-10 absolute ${showDropdown ? '' : 'hidden'}`}>
                 {sortOptions.map((option, index) => (
                     <SortOption key={index} name={option} selectedSortOption={selectedSortOption} selectSortOption={selectSortOption} />
                 ))}

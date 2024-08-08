@@ -1,0 +1,6 @@
+.product-catalog-container {
+    columns: 3;
+    width: fit-content;
+    column-gap: 30px;
+    margin-top: 30px;
+}
