@@ -1,5 +1,7 @@
 "use server"
 
+import { NextResponse } from "next/server"
+
 export async function GET(req: any) {
-    return "hello";
+    return NextResponse.json("hello");
 }
