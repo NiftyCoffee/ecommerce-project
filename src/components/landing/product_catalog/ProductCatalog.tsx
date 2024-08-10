@@ -8,7 +8,7 @@ export default function ProductCatalog() {
 
     const getProducts = async () => {
         try {
-        const res = await fetch("/api/products", {
+        const res = await fetch("https://ecommerce-project-niftycoffees-projects.vercel.app/api/products", {
             cache: "no-store",
         });
 
