@@ -1,5 +1,5 @@
 "use server"
 
-export function GET(req: any) {
+export async function GET(req: any) {
     return "hello";
 }
