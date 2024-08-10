@@ -47,13 +47,9 @@ const { MongoClient, ServerApiVersion } = require("mongodb");
 require('dotenv').config({ path: './.env.local' });
 
 const mongodbURI = process.env.MONGODB_URI;
-const db = client.db(process.env.DB_NAME);
 
 if (!mongodbURI) {
     throw new Error ("MONGODB_URI environment variable not defined");
-}
-if (!dbName) {
-    throw new Error("DB_NAME environment variable not defined");
 }
 
 const client = new MongoClient(mongodbURI, {
@@ -63,6 +59,12 @@ const client = new MongoClient(mongodbURI, {
         deprecationErrors: true,
       }
 });
+
+const db = client.db(process.env.DB_NAME);
+
+if (!db) {
+    throw new Error("DB_NAME environment variable not defined");
+}
 
 async function connectMongoDB() {
     try {
