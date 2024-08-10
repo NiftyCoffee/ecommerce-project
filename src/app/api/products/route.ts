@@ -19,6 +19,7 @@ export async function POST(req: any) {
 }
 
 export async function GET(req: any) {
+    console.log("GET function reached");
     await connectMongoDB();
     const products = await db.collection('products').find({}).toArray();
     return NextResponse.json({ products });
