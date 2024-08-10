@@ -4,7 +4,21 @@ import ProductCard from "./ProductCard";
 
 export default function ProductCatalog() {
 
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
+
+    const testGet = async () => {
+        try {
+            const res = await fetch("https://ecommerce-project-niftycoffees-projects.vercel.app/api/products");
+
+            if (!res.ok) {
+                throw new Error("Test failed");
+            }
+
+            console.log("hello");
+        } catch (error) {
+            console.log("Test failed:", error);
+        }
+    }
 
     const getProducts = async () => {
         try {
@@ -31,6 +45,7 @@ export default function ProductCatalog() {
     }
 
     useEffect(() => {
+        testGet();
         const allProducts = getProducts();
     }, []);
 
