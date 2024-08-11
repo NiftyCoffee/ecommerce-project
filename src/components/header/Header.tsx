@@ -3,7 +3,7 @@ import './Header.css';
 
 export default function Header() {
     return (
-        <section className="nav-section w-full py-2.5">
+        <section className="nav-section w-full py-2.5 bg-light dark:bg-dark">
             <nav>
                 <h1>nifty fits</h1>
                 <ul>

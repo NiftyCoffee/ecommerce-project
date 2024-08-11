@@ -8,6 +8,7 @@ interface ProductCardProps {
     brand: string,
     price: number,
     url: string,
+    img: string,
 }
 
 export default function ProductCard(props: ProductCardProps) {
@@ -16,7 +17,7 @@ export default function ProductCard(props: ProductCardProps) {
             <article className="product-card-container shadow-light_accent dark:shadow-dark_accent">
                     <div className="product-image-container">
                         <Image
-                        src={productImageSample}
+                        src={props.img}
                         alt="Product Image"
                         className="product-image"
                         layout={'fill'}

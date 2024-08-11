@@ -53,8 +53,8 @@ export default function ProductCatalog() {
 
     return (
         <main className="product-catalog-container">
-            {products.map((product: { name: string; brand: string; price: number; url: string; }, index) => (
-                <ProductCard key={index} name={product.name} brand={product.brand} price={product.price} url={product.url} />
+            {products.map((product: { name: string; brand: string; price: number; url: string; img: string; }, index) => (
+                <ProductCard key={index} name={product.name} brand={product.brand} price={product.price} url={product.url} img={product.img} />
             ))}
         </main>
     )
