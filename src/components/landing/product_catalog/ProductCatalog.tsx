@@ -8,7 +8,7 @@ export default function ProductCatalog() {
 
     const testGet = async () => {
         try {
-            const res = await fetch("https://ecommerce-project-niftycoffees-projects.vercel.app/api/products");
+            const res = await fetch("https://ecommerce-project-niftycoffees-projects.vercel.app/api/test");
 
             if (!res.ok) {
                 throw new Error("Test failed");
