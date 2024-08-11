@@ -37,8 +37,8 @@ export default function ProductCatalog() {
         // console.log(response_json["products"])
         console.log(response_json)
 
-        setProducts(response_json.products);
-
+        // setProducts(response_json.products);
+        setProducts(response_json);
         return response_json;
 
         } catch (error) {
