@@ -2,13 +2,15 @@ import './ProductCatalog.css';
 import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 
+const path = process.env.NEXT_PUBLIC_PATH;
+
 export default function ProductCatalog() {
 
     const [products, setProducts] = useState([]);
 
     const testGet = async () => {
         try {
-            const res = await fetch("https://ecommerce-project-niftycoffees-projects.vercel.app/api/test");
+            const res = await fetch(`${path}/api/test`);
 
             if (!res.ok) {
                 throw new Error("Test failed");
@@ -22,7 +24,7 @@ export default function ProductCatalog() {
 
     const getProducts = async () => {
         try {
-        const res = await fetch("https://ecommerce-project-niftycoffees-projects.vercel.app/api/products", {
+        const res = await fetch(`${path}/api/products`, {
             cache: "no-store",
         });
 
